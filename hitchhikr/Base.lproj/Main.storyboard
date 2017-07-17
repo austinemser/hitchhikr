@@ -37,16 +37,16 @@
                                         <rect key="frame" x="0.0" y="3" width="30" height="24"/>
                                         <state key="normal" image="menuSliderBtn"/>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ezd-lL-scq">
-                                        <rect key="frame" x="90.5" y="0.0" width="136.5" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezd-lL-scq">
+                                        <rect key="frame" x="100.5" y="0.0" width="136.5" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="HTCH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXH-ty-eQI">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HTCH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXH-ty-eQI">
                                                 <rect key="frame" x="0.0" y="0.0" width="72.5" height="30"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="26"/>
                                                 <color key="textColor" red="0.84705882352941175" green="0.27843137254901962" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="HIKR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcs-mg-r0L">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIKR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcs-mg-r0L">
                                                 <rect key="frame" x="72.5" y="0.0" width="64" height="30"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="26"/>
                                                 <color key="textColor" red="0.22352941176470587" green="0.22352941176470587" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
@@ -54,23 +54,50 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pk9-C4-QPH">
-                                        <rect key="frame" x="287" y="0.0" width="50" height="30"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pk9-C4-QPH">
+                                        <rect key="frame" x="307" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="145-JP-ETR"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="WMl-Ac-UGr"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uop-ZW-4p4">
+                                <rect key="frame" x="16" y="587" width="343" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="vFB-Ii-Ly7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="28"/>
+                                <state key="normal" title="REQUEST RIDE">
+                                    <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uh0-1x-XHu">
+                                <rect key="frame" x="299" y="519" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="h4Z-aR-E2u"/>
+                                    <constraint firstAttribute="width" constant="60" id="yce-1H-htv"/>
+                                </constraints>
+                                <state key="normal" image="centerMapBtn"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="uh0-1x-XHu" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0il-ZU-jNV"/>
                             <constraint firstItem="FYN-k5-WaS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="9kk-wu-36H"/>
+                            <constraint firstItem="Uop-ZW-4p4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="CEq-KA-Xy9"/>
                             <constraint firstItem="FYN-k5-WaS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="30" id="Rkf-le-ecc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FYN-k5-WaS" secondAttribute="trailing" id="Taf-wl-ecY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Uop-ZW-4p4" secondAttribute="bottom" constant="20" id="VyZ-uU-GLg"/>
                             <constraint firstItem="une-oX-8eS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aKd-P4-G3N"/>
                             <constraint firstAttribute="trailing" secondItem="une-oX-8eS" secondAttribute="trailing" id="ePW-Kq-b2C"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="une-oX-8eS" secondAttribute="bottom" id="kY5-K9-Q2l"/>
+                            <constraint firstItem="Uop-ZW-4p4" firstAttribute="top" secondItem="uh0-1x-XHu" secondAttribute="bottom" constant="8" id="lRv-kc-Cc5"/>
+                            <constraint firstItem="Uop-ZW-4p4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="y2b-jx-tvD"/>
                             <constraint firstItem="une-oX-8eS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zxI-yW-0I2"/>
                         </constraints>
                     </view>
@@ -81,6 +108,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="centerMapBtn" width="62" height="62"/>
         <image name="menuSliderBtn" width="30" height="24"/>
     </resources>
 </document>
