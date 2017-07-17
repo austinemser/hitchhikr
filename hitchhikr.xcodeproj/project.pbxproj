@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2E36D3D4142FA72087C854 /* Pods_hitchhikr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF3F02A8AE52A730CA3D1C60 /* Pods_hitchhikr.framework */; };
 		6E883EC71F1D425700DBABB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E883EC61F1D425700DBABB3 /* AppDelegate.swift */; };
 		6E883EC91F1D425700DBABB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E883EC81F1D425700DBABB3 /* ViewController.swift */; };
 		6E883ECC1F1D425700DBABB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E883ECA1F1D425700DBABB3 /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		6E883ECD1F1D425700DBABB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E883ED01F1D425700DBABB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E883ED21F1D425700DBABB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A6516FE3ADA4AD1C024CFE5 /* Pods-hitchhikr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hitchhikr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hitchhikr/Pods-hitchhikr.debug.xcconfig"; sourceTree = "<group>"; };
+		BD6C905E2E9BFE716912469D /* Pods-hitchhikr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hitchhikr.release.xcconfig"; path = "Pods/Target Support Files/Pods-hitchhikr/Pods-hitchhikr.release.xcconfig"; sourceTree = "<group>"; };
+		FF3F02A8AE52A730CA3D1C60 /* Pods_hitchhikr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hitchhikr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F2E36D3D4142FA72087C854 /* Pods_hitchhikr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4569659E323A242E7A5E1D0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF3F02A8AE52A730CA3D1C60 /* Pods_hitchhikr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6E883EBA1F1D425700DBABB3 = {
 			isa = PBXGroup;
 			children = (
 				6E883EC51F1D425700DBABB3 /* hitchhikr */,
 				6E883EC41F1D425700DBABB3 /* Products */,
+				FA397329D35DA99AB6C1C42E /* Pods */,
+				4569659E323A242E7A5E1D0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = hitchhikr;
 			sourceTree = "<group>";
 		};
+		FA397329D35DA99AB6C1C42E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A6516FE3ADA4AD1C024CFE5 /* Pods-hitchhikr.debug.xcconfig */,
+				BD6C905E2E9BFE716912469D /* Pods-hitchhikr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E883ED51F1D425700DBABB3 /* Build configuration list for PBXNativeTarget "hitchhikr" */;
 			buildPhases = (
+				EB7E9FC9C2EC4CAF6B7FFEA2 /* [CP] Check Pods Manifest.lock */,
 				6E883EBF1F1D425700DBABB3 /* Sources */,
 				6E883EC01F1D425700DBABB3 /* Frameworks */,
 				6E883EC11F1D425700DBABB3 /* Resources */,
+				CEE632CD56B7FA6DE6EECBB9 /* [CP] Embed Pods Frameworks */,
+				1F2496DF69D18215499F245C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F2496DF69D18215499F245C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hitchhikr/Pods-hitchhikr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEE632CD56B7FA6DE6EECBB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hitchhikr/Pods-hitchhikr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB7E9FC9C2EC4CAF6B7FFEA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6E883EBF1F1D425700DBABB3 /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		6E883ED61F1D425700DBABB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A6516FE3ADA4AD1C024CFE5 /* Pods-hitchhikr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 46NB8BS6Y3;
@@ -274,6 +350,7 @@
 		};
 		6E883ED71F1D425700DBABB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD6C905E2E9BFE716912469D /* Pods-hitchhikr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 46NB8BS6Y3;
