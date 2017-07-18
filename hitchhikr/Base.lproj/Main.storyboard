@@ -25,9 +25,11 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="une-oX-8eS">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AYy-25-Kxz" customClass="GradientView" customModule="hitchhikr" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AYy-25-Kxz" customClass="GradientView" customModule="hitchhikr" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="s0R-XY-Kz1"/>
+                                </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FYN-k5-WaS">
                                 <rect key="frame" x="22" y="30" width="337" height="30"/>
@@ -148,6 +150,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="uh0-1x-XHu" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0il-ZU-jNV"/>
+                            <constraint firstItem="AYy-25-Kxz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="26M-oX-1uL"/>
                             <constraint firstItem="CB2-c8-EIr" firstAttribute="top" secondItem="FYN-k5-WaS" secondAttribute="bottom" constant="10" id="6eu-Il-hcI"/>
                             <constraint firstItem="FYN-k5-WaS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="9kk-wu-36H"/>
                             <constraint firstItem="Uop-ZW-4p4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="CEq-KA-Xy9"/>
@@ -155,9 +158,11 @@
                             <constraint firstItem="FYN-k5-WaS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="30" id="Rkf-le-ecc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FYN-k5-WaS" secondAttribute="trailing" id="Taf-wl-ecY"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Uop-ZW-4p4" secondAttribute="bottom" constant="20" id="VyZ-uU-GLg"/>
+                            <constraint firstItem="AYy-25-Kxz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="W5y-HI-cdB"/>
                             <constraint firstItem="une-oX-8eS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aKd-P4-G3N"/>
                             <constraint firstAttribute="trailing" secondItem="une-oX-8eS" secondAttribute="trailing" id="ePW-Kq-b2C"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="une-oX-8eS" secondAttribute="bottom" id="kY5-K9-Q2l"/>
+                            <constraint firstAttribute="trailing" secondItem="AYy-25-Kxz" secondAttribute="trailing" id="kbM-S3-HaZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CB2-c8-EIr" secondAttribute="trailing" constant="20" id="kz8-PQ-bfg"/>
                             <constraint firstItem="Uop-ZW-4p4" firstAttribute="top" secondItem="uh0-1x-XHu" secondAttribute="bottom" constant="8" id="lRv-kc-Cc5"/>
                             <constraint firstItem="Uop-ZW-4p4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="y2b-jx-tvD"/>
