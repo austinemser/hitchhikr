@@ -13,6 +13,7 @@
 		6E883ECC1F1D425700DBABB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E883ECA1F1D425700DBABB3 /* Main.storyboard */; };
 		6E883ECE1F1D425700DBABB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E883ECD1F1D425700DBABB3 /* Assets.xcassets */; };
 		6E883ED11F1D425700DBABB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E883ECF1F1D425700DBABB3 /* LaunchScreen.storyboard */; };
+		6ED472AB1F1E547200FB4397 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED472AA1F1E547200FB4397 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		6E883ECD1F1D425700DBABB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E883ED01F1D425700DBABB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E883ED21F1D425700DBABB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ED472AA1F1E547200FB4397 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		8A6516FE3ADA4AD1C024CFE5 /* Pods-hitchhikr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hitchhikr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hitchhikr/Pods-hitchhikr.debug.xcconfig"; sourceTree = "<group>"; };
 		BD6C905E2E9BFE716912469D /* Pods-hitchhikr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hitchhikr.release.xcconfig"; path = "Pods/Target Support Files/Pods-hitchhikr/Pods-hitchhikr.release.xcconfig"; sourceTree = "<group>"; };
 		FF3F02A8AE52A730CA3D1C60 /* Pods_hitchhikr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hitchhikr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,9 @@
 		6E883EC51F1D425700DBABB3 /* hitchhikr */ = {
 			isa = PBXGroup;
 			children = (
+				6ED472A91F1E543500FB4397 /* Model */,
+				6ED472A81F1E543000FB4397 /* View */,
+				6ED472A71F1E542200FB4397 /* Controller */,
 				6E883EC61F1D425700DBABB3 /* AppDelegate.swift */,
 				6E883EC81F1D425700DBABB3 /* ViewController.swift */,
 				6E883ECA1F1D425700DBABB3 /* Main.storyboard */,
@@ -77,6 +82,28 @@
 				6E883ED21F1D425700DBABB3 /* Info.plist */,
 			);
 			path = hitchhikr;
+			sourceTree = "<group>";
+		};
+		6ED472A71F1E542200FB4397 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6ED472A81F1E543000FB4397 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6ED472AA1F1E547200FB4397 /* GradientView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6ED472A91F1E543500FB4397 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		FA397329D35DA99AB6C1C42E /* Pods */ = {
@@ -214,6 +241,7 @@
 			files = (
 				6E883EC91F1D425700DBABB3 /* ViewController.swift in Sources */,
 				6E883EC71F1D425700DBABB3 /* AppDelegate.swift in Sources */,
+				6ED472AB1F1E547200FB4397 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
